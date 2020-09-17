@@ -98,3 +98,12 @@ python3 test.py ./pretrained_models/coil100_pretrained/4/30/
 #### Using pre-trained Models
 
 - you can find our pre-trained models in `/MNIST-union/MNIST-mixed/models`, and `/MNIST-union/MNIST-normal/models`. You can also see the results in `/MNIST-union/MNIST-mixed/results`, and `/MNIST-union/MNIST-normal/results`.
+
+
+
+### 3. Medical Datasets
+
+- For each dataset you can find the data in `/MEDICAL/data/`.
+- For each dataset you can use the corresponding jupyter notebook in `/MEDICAL/` for reproducing the results.
+- For each dataset you can also check `/MEDICAL/results/` to see our results.
+
