@@ -79,13 +79,22 @@ python3 test.py ./pretrained_models/fashion_mnist_pretrained/2/
 python3 test.py ./pretrained_models/coil100_pretrained/4/30/
 ```
 
-### 2. Union model:
+### 2. Union Model
 
-- At first, you need to complete the submit.sh according to your HPC setting to submit a sbatch file.
-- Then, you just need to run main.sh on the HPC, It will automatically run code.py for 10 classes.
+## Reproducing the results
 
-1. Note that by runnig the code.py you can save models and get results for a given class.
-2. You can separately run code.py by passing a number of class as an argument.
+# Normal MNIST:
+- At first, you need to complete the `submit.sh` according to your HPC setting to submit a sbatch.
+- Then, you just need to run `/MNIST-union/MNIST-normal/main.sh` on the HPC, It will automatically run `/MNIST-union/MNIST-normal/code.py` for 10 classes.
+- You can separately run `/MNIST-union/MNIST-normal/code.py` by passing a number of class as an argument.
+- Note that by runnig the `/MNIST-union/MNIST-normal/code.py` you can save models and get results for a given class.
 
+# Multi-Calss MNIST:
+- At first, you need to complete the `submit.sh` according to your HPC setting to submit a sbatch.
+- Then, you just need to run `/MNIST-union/MNIST-mixed/main.sh` on the HPC, It will automatically run `/MNIST-union/MNIST-mixed/code.py` for 12 combinations that we use in our paper.
+- You can other combinations of classes in the `/MNIST-union/MNIST-mixed/code.py` and run it independently.
+- Note that by runnig the `/MNIST-union/MNIST-mixed/code.py` you can save models and get results for a given class.
 
-## Citation
+## Using pre-trained Models
+
+- you can find our pre-trained models in `/MNIST-union/MNIST-mixed/models`, and `/MNIST-union/MNIST-normal/models`. You can also see the results in `/MNIST-union/MNIST-mixed/results`, and `/MNIST-union/MNIST-normal/results`.
