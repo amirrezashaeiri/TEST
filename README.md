@@ -87,13 +87,13 @@ python3 test.py ./pretrained_models/coil100_pretrained/4/30/
 - At first, you need to complete the `submit.sh` according to your HPC setting to submit a sbatch.
 - Then, you just need to run `/MNIST-union/MNIST-normal/main.sh` on the HPC, It will automatically run `/MNIST-union/MNIST-normal/code.py` for 10 classes.
 - You can separately run `/MNIST-union/MNIST-normal/code.py` by passing a number of class as an argument.
-- Note that by runnig the `/MNIST-union/MNIST-normal/code.py` you can save models and get results for a given class.
+- Note that by running the `/MNIST-union/MNIST-normal/code.py` you can save models and get results for a given class.
 
-##### Multi-Calss MNIST:
+##### Multi-Class MNIST:
 - At first, you need to complete the `submit.sh` according to your HPC setting to submit a sbatch.
 - Then, you just need to run `/MNIST-union/MNIST-mixed/main.sh` on the HPC, It will automatically run `/MNIST-union/MNIST-mixed/code.py` for 12 combinations that we use in our paper.
 - You can other combinations of classes in the `/MNIST-union/MNIST-mixed/code.py` and run it independently.
-- Note that by runnig the `/MNIST-union/MNIST-mixed/code.py` you can save models and get results for a given class.
+- Note that by running the `/MNIST-union/MNIST-mixed/code.py` you can save models and get results for a given class.
 
 #### Using pre-trained Models
 
@@ -103,7 +103,7 @@ python3 test.py ./pretrained_models/coil100_pretrained/4/30/
 
 ### 3. Medical Datasets
 
-- For each dataset you can find the data in `/MEDICAL/data/`.
-- For each dataset you can use the corresponding jupyter notebook in `/MEDICAL/` for reproducing the results.
-- For each dataset you can also check `/MEDICAL/results/` to see our results.
+- For each dataset, you can find the data in `/MEDICAL/data/`.
+- For each dataset, you can use the corresponding Jupyter notebook in `/MEDICAL/` for reproducing the results.
+- For each dataset, you can also check `/MEDICAL/results/` to see our results.
 
